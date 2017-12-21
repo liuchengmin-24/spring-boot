@@ -34,5 +34,12 @@ public class ScheduledTasks {
         //每天的0点、13 点、18 点、21 点都执行一次：0 0 0, 13, 18, 21 * * ?
         //每隔5分钟执行一次：0 0 / 5 * * * ?
         log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
+		log.info("The time is now {}" + dateFormat.format(new Date()));
     }
 }
