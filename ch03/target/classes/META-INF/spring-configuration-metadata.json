@@ -1,0 +1,66 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.boot.config.User",
+      "name": "com.forezp",
+      "type": "com.boot.config.User"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "name": "my",
+      "type": "com.boot.config.ConfigBean"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.boot.config.User",
+      "defaultValue": 0,
+      "name": "com.forezp.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boot.config.User",
+      "name": "com.forezp.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "defaultValue": 0,
+      "name": "my.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "name": "my.greeting",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "defaultValue": 0,
+      "name": "my.max",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "name": "my.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "defaultValue": 0,
+      "name": "my.number",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "name": "my.uuid",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boot.config.ConfigBean",
+      "name": "my.value",
+      "type": "java.lang.String"
+    }
+  ]
+}

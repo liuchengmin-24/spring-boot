@@ -1,0 +1,21 @@
+my:
+ name: forezp
+ age: 12
+ number:  ${random.int}
+ uuid : ${random.uuid}
+ max: ${random.int(10)}
+ value: ${random.value}
+ greeting: hi,i'm  ${my.name}
+server:
+  port: 8086
+  context-path: /boot
+spring:
+  application:
+    name: boot
+  profiles:
+    active: test
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info
