@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: boot-fileupload
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size:  10MB
+
+server:
+  port: 8085
+  context-path: /boot-fileupload
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info
+storage:
+  filepath: file_path

@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: boot-mybatis
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+
+server:
+  port: 8085
+  context-path: /boot-mybatis
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info

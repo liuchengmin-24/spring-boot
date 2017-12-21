@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: boot-mongodb
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/springboot-db
+server:
+  port: 8084
+  context-path: /boot-mongodb
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info

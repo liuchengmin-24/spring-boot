@@ -1,0 +1,11 @@
+
+spring:
+  mail:
+    host: smtp.163.com
+    username: ajacom@163.com
+    password: 5205312004
+    properties:
+      mail:
+       smtp:
+        auth: true
+        timeout: 25000

@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: boot-mybatis
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+server:
+  port: 8084
+  context-path: /boot-mybatis
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info
+mybatis:
+  mapper-locations: classpath*:mybatis/*Mapper.xml
+  type-aliases-package: com.mybatis.entity
+#通用mapper配置
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+
+
+#pagehelper配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: boot-rabbitmq
+server:
+  port: 8084
+  context-path: /boot-rabbitmq
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+  <!--控制台日志输出-->
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+  <springProperty scope="context" name="logName" source="spring.application.name"/>
+  <springProperty scope="context" name="logPath" source="logging.path"/>
+  <!-- Example for logging into the build folder of your project -->
+  <!-- You can override this to have a custom pattern -->
+  <property name="CONSOLE_LOG_PATTERN"
+            value="%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"/>
+
+  <!-- 日志文件分割 -->​
+  <appender name="logFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${logPath}/${logName}.log</file>
+    <encoder>
+      <pattern>${FILE_LOG_PATTERN}</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <fileNamePattern>${logPath}/${logName}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+      <maxHistory>15</maxHistory>
+      <maxFileSize>300MB</maxFileSize>
+    </rollingPolicy>
+  </appender>
+  ​
+  <root level="info">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="logFile"/>
+  </root>
+</configuration>

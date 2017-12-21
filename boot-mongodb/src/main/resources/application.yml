@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: boot-mongodb
+
+server:
+  port: 8085
+  context-path: /boot-mongodb
+logging:
+  exception-conversion-word: '%wEx'
+  path: F:\tel\spring-boot\log
+  level:
+    root: info
