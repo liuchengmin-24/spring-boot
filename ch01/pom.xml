@@ -25,7 +25,7 @@
 		<gson.version>2.7</gson.version>
 		<lombok.version>1.16.8</lombok.version>
 	</properties>
-
+	<!--    dd -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
